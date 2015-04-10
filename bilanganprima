@@ -17,6 +17,7 @@ Scanner in = new Scanner (System.in);
     System.out.println("Output");
     System.out.print("Deret bilangan prima antara "+a1+" dan "+a2+" adalah \n");
     int num=a1;
+    int sum=sum+num;
     while (num <= a2) {
         int tmp = 0;
         for (int i=2; i<num; i++) {
@@ -25,7 +26,7 @@ Scanner in = new Scanner (System.in);
             }
         }
         if (tmp != 1){
-            System.out.print(num);
+            sum=sum+num;
         }
         num++;
     }
